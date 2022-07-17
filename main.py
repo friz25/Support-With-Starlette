@@ -1,5 +1,4 @@
 from starlette.applications import Starlette
-
 from config.database import database, create_db
 from src.routes import routes
 

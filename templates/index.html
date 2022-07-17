@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"></script>
 </head>
+
 <body>
-<form method="post">
-    <p><input name="username" type="text" placeholder="Имя"></p>
-    <p><input name="email" type="email" placeholder="Email"></p>
-    <p><textarea name="message" rows="10" cols="30" placeholder="Сообщение"></textarea></p>
-    <button type="submit">Отправить</button>
-</form>
+<div style="margin-top: 50px;" class="ui container">
+    <h1 class="ui center aligned header">Support App</h1>
+
+    <form class="ui form" method="post">
+
+        <p class="ui big header"><input name="username" type="text" placeholder="Имя"></p>
+        <p class="ui big header"><input name="email" type="email" placeholder="Email"></p>
+        <p class="ui big header"><textarea name="message" rows="10" cols="30" placeholder="Сообщение"></textarea></p>
+        <button class="ui blue button" type="submit">Отправить</button>
+
+    </form>
+
+</div>
 </body>
 </html>

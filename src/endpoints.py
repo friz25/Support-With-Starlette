@@ -1,7 +1,6 @@
 from starlette.endpoints import HTTPEndpoint
-from starlette.responses import PlainTextResponse
+from starlette.responses import PlainTextResponse, RedirectResponse
 from starlette.templating import Jinja2Templates
-from starlette.responses import RedirectResponse
 
 from config.database import database
 from .models import support

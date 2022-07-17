@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Support</title>
-</head>
-<body>
-<h1>Ваши сообщения:</h1>
-{% for res in results %}
-    <p>
-        {{ res.username }} - {{ res.email }}<br>
-        {{ res.message }}<br>
-    </p>
-{% endfor %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+
+    <h1>Ваши сообщения:</h1>
+    {%if results %}
+        {% for res in results %}
+          <div class="alert alert-warning mt-2">
+            
+            <h3>{{ res.username }} - {{ res.email }}</h3>
+            <p>{{ res.message }}</p>
+
+          </div>
+        {% endfor %}
+    {% else %}
+        <p>У нас нет записей!</p>
+    {% endif %}
+
+{% endblock %}
