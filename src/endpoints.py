@@ -9,6 +9,7 @@ template = Jinja2Templates(directory='templates')
 async def homepage(request):
     if request.method == 'POST':
         # print('AAAAAAAA')
+
         return RedirectResponse(request.url_for('get_support'), status_code=303)
     return template.TemplateResponse('index.html', {"request": request})
 
